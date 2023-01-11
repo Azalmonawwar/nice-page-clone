@@ -1,0 +1,145 @@
+:root{
+    --bg-color : #dddbd9;
+    --black : #111111;
+    --font : 'Open Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}   
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    height: 80px;
+    width: 100%;
+}
+
+.navbar .logo{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.875rem;
+}
+
+.navlist{
+    list-style: none;
+}
+
+.navlist a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* section---------------------- */
+
+
+.margin{
+    width: 80%;
+    margin: 70px auto;
+}
+
+
+.col{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    z-index: 10;
+}
+
+.size30{
+    display: flex;
+    z-index: 11;
+    flex:30 0 50%;
+    max-width: 100%;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+}
+
+.layout-container{
+    display: flex;
+    background-color: #f4f4f4;
+    flex:0 0 25%;
+    max-width: 25%;
+    max-height: 369px;
+    justify-content: center;
+}
+
+.layout-container .img-container{
+    max-width: 100%;
+    flex:1;
+}
+
+.layout-container .img-container img{
+    width: 100%;
+    max-height: 369px;
+}
+
+
+.layout-container .info-container{
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.layout-container .info-container h3{
+    font-size: 1.875rem;
+    
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.layout-container .info-container p{
+    line-height: 35.2px;
+    margin: 30px 0 0;
+}
+
+
+@media (max-width:1050px){
+    .logo{
+        margin-left: 10px;
+    }
+    .row{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .layout-container{
+        display: flex;
+        flex:1 1 100%;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        max-width: 100%;
+        max-height: 350px;
+    }
+    .layout-container .info-container{
+        padding: 30px 10px;
+    }
+    #order-1{
+        order: -2;
+    }
+    #order-2{
+        order: -1;
+    }
+    #order-3{
+        order: 0;
+    }
+    #order-4{
+        order:1;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Website Page</title>
+</head>
+<body class="u-body">
+    <header>
+        <div class="navbar">
+            <div class="logo"><h2>logo</h2></div>
+            <div class="icon" id="show"><i class="fa-solid fa-bars"></i></div>
+            <div class="navlist">
+                <span id="close">X</span>
+                <ul >
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="mx">
+            <div class="my">
+                <div class="layout">
+                    <div class="row">
+                        <div class="info">
+                                <div class="layout-info">
+                                    <h2>I am Interior Designer</h2>
+                                    <p>
+                                        Design your dream Home & Office be unique, elegant & stylish. Fresh innovative perfect designs. On site work ,hassle free on time project completion. Virtual 3D view.
+                                    </p>
+                                    <p class="italic">
+                                        Image from <a href="#">Freepik</a>
+                                    </p>
+                                    <a href="#" class="btn">learn more</a>
+                                </div>
+                            
+                        </div>
+                        <div class="pic">
+                            <div class="u-container">
+                                <div class="m-container">
+                                    <img src="img/img1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="footer">
+            <div>
+                <p>
+                    Sample text. Click to select the text box. Click again or double <br> to start editing the text.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>    
+    let show = document.getElementById('show');
+    let close = document.getElementById('close')
+    let navlist = document.querySelector('.navlist');
+    // let body = document.querySelector('.u-body');
+    show.addEventListener('click',showNav);
+    close.addEventListener('click',closeNav);
+
+    function showNav() {
+        navlist.style.left = 0;
+       
+    }
+
+    function closeNav() {
+        navlist.style.left = '-100%';
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+:root{
+    --lightblue : #72d9d5;
+    --darkblue : #5e8188;
+    --black : #111111;
+    --gray : #333333;
+    --white : #ffffff;
+    --atag : #c0dbe1;
+    --blue: #72a7b3;
+    --red : #e12b2b;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nobile:wght@400;500;700&display=swap');
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: auto;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--lightblue);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--darkblue);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--blue);
+}
+.nav ul li a{
+    padding: 10px 20px;
+    color: var(--darkblue);
+}
+
+nav container{
+    width: 1140px;
+    margin: 0 auto;
+    min-height: 80px;
+}
+
+
+main section container{
+    width: 1140px;
+    margin: 0 auto;
+    line-height: 1.6;
+    min-height: 541px;
+}
+
+info h2{
+    font-family: 'Nobile';
+    margin: 0;
+    font-weight: 400;
+    font-size: 2.25rem;
+}
+
+info p{
+    margin: 34px 0 0 ;
+    color: var(--black);
+    word-wrap: break-word;
+}
+
+info .btn{
+    margin: 34px 0 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    border-style: none;
+    background-color: #c2f0ee;
+    color: var(--darkblue);
+}
+
+info container{
+    padding: 30px 60px;
+}
+
+
+info second div imgcontainer{
+    min-height: 431px;
+    border: 5px solid transparent;
+    padding: 30px 45px 30px 40px;
+}
+
+img{
+    width: 367px;
+    height: 367px;
+    background-position: 50% 50%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+

@@ -1,0 +1,141 @@
+:root{
+    --font:Roboto,sans-serif;
+    --orange:#fd6a08;
+    --white:#ffffff;
+    --black:#111111;
+    --gray:#475262;
+}
+
+.flex{
+    display:flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-width{
+    flex: 1 1 33.3333%;
+    width: 33.3333%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    text-decoration: none;
+}
+
+.container{
+    width: 1140px;
+    margin-inline: auto;
+    margin-block: 60px;
+}
+
+.layout-row{
+    min-height: 582px;
+}
+
+.first-layout{
+    padding: -20px;
+    
+}
+
+.img-content{
+    width: 100%;
+    border-radius: 20px;
+    background-position: 50% 50%;
+    background-image: url(img.jpg);
+    background-size: cover;
+}
+
+.second-layout{
+    padding: 30px;
+}
+
+.creative-design{
+    background-color: var(--orange);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: var(--white);
+    flex: 1 1 50%;
+}
+
+.creative-design h3{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 23px 0 0;
+}
+
+.creative-design p{
+    margin: 23px 0 0 ;
+    text-align: center;
+    width: 81%;
+    line-height: 1.6;
+}
+.content-para{
+    flex:1 1 50%;
+    margin: 30px 0 0 ;
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 90%;
+}
+
+.content-para .link{
+    margin: 23px 0 0 ;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    color: var(--orange);
+}
+
+.link::before{
+    content: '';
+    height: 1px;
+    width: 35%;
+    position: relative;
+    display: block;
+    background: var(--orange);
+    top:100%;
+}
+
+.content-para .link:hover {
+    color: var(--black);
+}
+
+.link:hover::before{
+    color:var(--black)
+}
+
+.third-layout{
+    padding: 30px;
+}
+
+.content-para-2{
+    flex:1 1 50%;
+    justify-content: flex-end;
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 93%;
+}
+
+.web-design{
+    background-color: var(--gray);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 30px 0 0 ;
+    color: var(--white);
+    flex: 1 1 50%;
+}
+
+.web-design h3{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 23px 0 0;
+}
+
+.web-design p{
+    margin: 23px 0 0 ;
+    text-align: center;
+    width: 81%;
+    line-height: 1.6;
+}

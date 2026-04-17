@@ -1,0 +1,12 @@
+{
+  "name": "nice-page-clone-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automation scripts for Instagram reel extraction/download flow via Playwright",
+  "scripts": {
+    "reels:download": "node scripts/instagram_reels_downloader.js"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0"
+  }
+}
